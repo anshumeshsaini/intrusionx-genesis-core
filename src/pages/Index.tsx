@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import BackgroundStarfield from '@/components/BackgroundStarfield';
 import GlitchHeader from '@/components/GlitchHeader';
@@ -14,46 +13,47 @@ const Index = () => {
   const countdownTarget = new Date();
   countdownTarget.setDate(countdownTarget.getDate() + 30);
 
+  // Events distribute across a 24-hour period
   const events = [
     {
       id: '1',
       title: 'Registration & Opening Ceremony',
-      time: '09:00 AM',
+      time: '09:00',  // 24-hour format
       description: 'Check-in, welcome address, and hackathon rules explanation.',
       completed: true
     },
     {
       id: '2',
       title: 'Team Formation',
-      time: '10:30 AM',
+      time: '10:30',
       description: 'Network with other participants and form your teams.',
       completed: true
     },
     {
       id: '3',
       title: 'Hacking Begins',
-      time: '12:00 PM',
+      time: '12:00',
       description: 'Start working on your cybersecurity solutions.',
       completed: false
     },
     {
       id: '4',
       title: 'Mentor Sessions',
-      time: '03:00 PM',
+      time: '15:00',
       description: 'Expert cybersecurity professionals provide guidance.',
       completed: false
     },
     {
       id: '5',
       title: 'Midnight Challenge',
-      time: '12:00 AM',
+      time: '00:00',
       description: 'Special security challenge with bonus points.',
       completed: false
     },
     {
       id: '6',
       title: 'Final Submissions',
-      time: '08:00 AM',
+      time: '08:00',
       description: 'Submit your projects for evaluation.',
       completed: false
     }
